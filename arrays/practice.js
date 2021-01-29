@@ -302,15 +302,10 @@ function longer(arr1, arr2) {
 
 function both(arr1, arr2) {
   commons = [];
-  longest = [] 
-  shortest = [];
 
-  arr1.length <= arr2 ? longest = arr2 : longest = arr1;
-  longest === arr1 ? shortest = arr2 : shortest = arr1;
-
-  for (i= 0; i < longest.length; i++) {
-    for (j=0; j < shortest.length; j++) {
-      if (shortest[j] === longest[i]) {
+  for (i= 0; i < arr1.length; i++) {
+    for (j=0; j < arr2.length; j++) {
+      if (arr1[j] === arr2[i]) {
         commons.push(shortest[j])
       }
     }
