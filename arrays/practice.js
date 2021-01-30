@@ -162,7 +162,7 @@ var getRandomArbitrary = function() {
 function finder(arr) {
   let randomNumber = getRandomArbitrary();
 
-  for (i = 0 ; i < arr.length; i++) {
+  for (let i = 0 ; i < arr.length; i++) {
     if (arr[i] === randomNumber) {
       return true
     }
@@ -306,7 +306,7 @@ function both(arr1, arr2) {
   for (i= 0; i < arr1.length; i++) {
     for (j=0; j < arr2.length; j++) {
       if (arr1[j] === arr2[i]) {
-        commons.push(shortest[j])
+        commons.push(arr1[j])
       }
     }
   }
